@@ -1,5 +1,6 @@
 .work-page {
     padding: 20px;
+    background-color: #fff;
   }
   
   .header {
@@ -11,6 +12,9 @@
   
   .title {
     margin: 0;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
   }
   
   .work-cards {
@@ -28,22 +32,31 @@
   
   .bento-box-item {
     padding: 10px;
+    width: 600px;
   }
   
   .image img {
-    width: 500px;
+    width: 600px;
+    height: 320px;
   }
   
   .tags {
     margin-top: 10px;
   }
-  
+  .title-tags-card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px dotted #2f54eb;
+    width: 550px;
+  }
   .description-card {
     margin-top: 10px;
     background-color: white;
     padding: 20px;
     border-radius: 5px;
     border: 1px dotted #2f54eb; /* 1px dotted border with Geek Blue color */
+    width: 550px;
   }
   
   
@@ -71,7 +84,7 @@
   
   .image-gallery-custom-left-nav,
   .image-gallery-custom-right-nav {
-    background-color: #2f54eb;
+    background-color: white;
     border: none;
     border-radius: 50%;
     padding: 5px;
@@ -91,7 +104,7 @@
   }
   .image-gallery-custom-left-nav .svg-inline--fa,
   .image-gallery-custom-right-nav .svg-inline--fa {
-    color: white; /* Geek Blue color */
+    color: #2f54eb; /* Geek Blue color */
   }
   .custom-button {
     border: 1px solid #2f54eb; /* Geek Blue border */
@@ -104,4 +117,7 @@
     color: #fff; /* Change text color on hover or focus */
     background-color: #2f54eb; /* Change background color on hover or focus */
   }
-  
+  :where(.css-dev-only-do-not-override-1rqnfsa).ant-card-bordered {
+    border: 1px solid #f0f0f0;
+    background-color: rgba(245, 245, 245, 0.3); /* Set background color with 50% opacity */
+}

@@ -6,6 +6,7 @@ import 'react-image-gallery/styles/css/image-gallery.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight, faLink } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import CaseStudy from '../CaseStudy/CaseStudy';
 import './WorkPage.css'; // Your custom CSS file
 
 const WorkPage = () => {
@@ -13,7 +14,7 @@ const WorkPage = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [caseStudyModalIsOpen, setCaseStudyModalIsOpen] = useState(false);
   const [selectedWork, setSelectedWork] = useState(null);
-
+  
   const getTagColor = (tag) => {
     switch (tag) {
       case 'UI':
@@ -132,13 +133,7 @@ const WorkPage = () => {
       description: 'Description for featured work 3.',
       caseStudy: 'View Case Study',
     },
-    {
-      id: 5,
-      image: 'https://via.placeholder.com/300x200',
-      title: 'Featured Work 5',
-      description: 'Description for featured work 5.',
-      caseStudy: 'View Case Study',
-    },
+   
     // Add more dummy data as needed
   ];
   const [modalVisible, setModalVisible] = useState(false);
@@ -302,7 +297,12 @@ const WorkPage = () => {
           onCancel={closeCaseStudyModal}
           footer={null}
         >
-          {selectedWork && selectedWork.caseStudyContent}
+          {selectedWork && (
+            <CaseStudy
+              title={selectedWork.title}
+              content={selectedWork.caseStudyContent}
+            />
+          )}
         </Modal>
 
     </div>

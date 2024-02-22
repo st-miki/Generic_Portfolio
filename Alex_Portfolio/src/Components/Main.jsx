@@ -34,12 +34,21 @@ const Main = () => {
   const handleModalClose = () => {
     setModalVisible(false);
   };
-
+  const handleDownloadClick = () => {
+    // Create an anchor element
+    const link = document.createElement('a');
+    // Set the href attribute to the path of your CV file
+    link.href = '../assets/My_cv.pdf'; // Adjust the path as needed
+    // Set the download attribute to specify the filename for the downloaded file
+    link.download = 'Alexander_k_Alema_cv.pdf'; // Adjust the filename as needed
+    // Trigger a click event on the anchor element to initiate the download
+    link.click();
+  };
   return (
     <main>
       <div className="user-info">
         <div className="user-details" onClick={handleModalOpen} >
-          <img src="alex_icon.png" alt="User Avatar" className="user-avatar" style={{border: '2px solid #1890ff'}} />
+          <img src="alex_icon.jpeg" alt="User Avatar" className="user-avatar" style={{border: '2px solid #1890ff'}} />
           <p className="user-name"style={{color:'#1890ff'}}>Alexander K. Alema</p>
         </div>
         <div className="location-details">
@@ -58,7 +67,7 @@ const Main = () => {
       </Modal>
       <section className="hero">
         <div className="hero-content">
-            <div>
+            <div style={{width:"700px"}}>
                 <h1 className="hero-title">Welcome to My Portfolio</h1>
                 <p className="hero-description">I'm excited to share my work with you!</p>
                 <Button
@@ -67,7 +76,7 @@ const Main = () => {
                     icon={<FontAwesomeIcon icon={faDownload} />}
                     size="large"
                     style={{ color: '#2F54EB', borderColor: '#2F54EB' }}
-                    href="/path/to/download/cv"
+                    onClick={handleDownloadClick}
                 >
                     Download CV
                 </Button>
@@ -92,7 +101,7 @@ const Main = () => {
 
         </div>
         <Link to="/work" className="circular-button">
-          <FontAwesomeIcon icon={faBars} style={{ color: '#333' }} />
+          <div class="image-icon"></div>
         </Link>
       </div>
     </main>
