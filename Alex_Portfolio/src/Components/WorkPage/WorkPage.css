@@ -1,0 +1,107 @@
+.work-page {
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    margin: 0;
+  }
+  
+  .work-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .work-card {
+    margin-bottom: 20px;
+  }
+  
+  .bento-box {
+    display: flex;
+  }
+  
+  .bento-box-item {
+    padding: 10px;
+  }
+  
+  .image img {
+    width: 500px;
+  }
+  
+  .tags {
+    margin-top: 10px;
+  }
+  
+  .description-card {
+    margin-top: 10px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px dotted #2f54eb; /* 1px dotted border with Geek Blue color */
+  }
+  
+  
+  .case-study-card {
+    margin-top: 10px;
+  }
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .image-gallery-custom-left-nav,
+  .image-gallery-custom-right-nav {
+    background-color: #2f54eb;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .image-gallery-custom-left-nav {
+    left: 10px;
+  }
+  
+  .image-gallery-custom-right-nav {
+    right: 10px;
+  }
+  .image-gallery-custom-left-nav .svg-inline--fa,
+  .image-gallery-custom-right-nav .svg-inline--fa {
+    color: white; /* Geek Blue color */
+  }
+  .custom-button {
+    border: 1px solid #2f54eb; /* Geek Blue border */
+    color: #2f54eb; /* Geek Blue text color */
+  }
+  
+  .custom-button:hover,
+  .custom-button:focus {
+    border-color: #2f54eb; /* Change border color on hover or focus */
+    color: #fff; /* Change text color on hover or focus */
+    background-color: #2f54eb; /* Change background color on hover or focus */
+  }
+  

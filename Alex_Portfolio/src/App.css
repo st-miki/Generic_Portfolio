@@ -1,0 +1,185 @@
+/*hero section*/
+body{
+  background-color: #f5f5f5;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 114vh; /* Adjusted height */
+  background-color: #f5f5f5;
+  margin-top: -90px;
+  z-index: 1;
+}
+
+.hero-content {
+  text-align: left;
+  flex: 1;
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 70vh;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #f2fbff; /* Set background color */
+  border-radius: 50%/30% 70% 60% 40%; /* Custom border radius for a deformed bubble shape */
+  overflow: hidden; /* Hide overflowing content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.hero-image__img {
+  width: 100%; /* Increase width for a slightly larger image */
+  height: auto;
+  display: block;
+  position: absolute;
+  bottom: -20%; /* Adjust the positioning of the image vertically */
+  left: 50%; /* Center the image horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  border-radius: 50%; /* Make the image round */
+}
+
+
+
+
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  background-color: #f5f5f5;
+  position: fixed; /* Fixed position */
+  top: 0; /* Align to the top */
+  width: 100%; /* Take full width */
+  z-index: 2; /* Ensure it's above other elements */
+}
+
+.user-details {
+  display: flex;
+  align-items: center;
+  margin-left: 4rem; /* Adjusted margin */
+  cursor: pointer;
+}
+
+.user-avatar {
+  width: 50px; /* Adjusted avatar size */
+  height: 50px; /* Adjusted avatar size */
+  border-radius: 50%; /* Make it circular */
+  object-fit: cover;  /* Ensure the image covers the entire space */
+  border: 2px solid #1890ff;
+  image-rendering: -webkit-optimize-contrast; /* Improve image rendering */
+  image-rendering: pixelated; /* Improve image rendering */
+}
+
+
+.user-name {
+  margin-left: 1rem; /* Adjusted margin */
+  font-size: 1.0rem; /* Adjusted font size */
+  color: #333333; /* Adjusted color */
+  font-weight: 500;
+}
+
+.location-details {
+  display: flex;
+  align-items: center;
+  margin-right: 4rem; /* Adjusted margin */
+}
+
+.location-icon {
+  margin-right: 0.5rem; /* Adjusted margin */
+  font-size: 1.0rem; /* Adjusted font size */
+  color: #666; /* Adjusted color */
+}
+
+.location-text {
+  font-size: 1rem; /* Adjusted font size */
+  color: #666; /* Adjusted color */
+  margin-right: 5px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  margin-top: 10vh; /* Adjust margin to accommodate user info */
+}
+
+.button-container {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+}
+
+.circular-button {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.revolving-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px; /* Adjust this value to make the container smaller */
+  height: 80px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#circlePath {
+  fill: none;
+}
+
+text {
+  text-anchor: middle;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  fill: #333;
+  transform-origin: center center;
+  animation: text-rotate 5s infinite linear;
+}
+
+@keyframes text-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.image-icon {
+  display: inline-block;
+  width: 20px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+  background-image: url('briefcase.png');
+  background-size: cover;
+}
+
