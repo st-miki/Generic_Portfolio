@@ -1,6 +1,6 @@
 # Minimalist Portfolio Website
 
-![Portfolio Screenshot](images/screenshot1.png)
+![Portfolio Screenshot](Portfolio_screenshots/Home_Page.png)
 
 Welcome to my minimalist and aesthetic portfolio website! This repository contains the source code and assets for my personal portfolio, designed to showcase my skills, projects, and professional journey.
 
@@ -77,19 +77,19 @@ Feel free to customize the portfolio to match your personal style and profession
 Here are some screenshots of the portfolio:
 
 
-Caption: Home Page
-
-
-Caption: Projects Section
-
-
-Caption: Contact Form
+### Home Page
+![Portfolio Screenshot](Portfolio_screenshots/Home_Page.png)
+### Projects Section
+![Portfolio Screenshot](Portfolio_screenshots/Works_Page.png)
+### Description Modal
+![Portfolio Screenshot](Portfolio_screenshots/Home_Page_Modal.png)
+### Featured Works
+![Portfolio Screenshot](Portfolio_screenshots/Featured_Works_Page.png)
 
 ### Contact
 Feel free to reach out if you have any questions or suggestions!
 
-Email: mikiengida52@gmail.com
-LinkedIn: your-linkedin-profile
+Email: mikiengida52@gmail.com<br>
 Twitter: @st_mickey_
 ### License
 Distributed under the MIT License. See LICENSE for more information.
